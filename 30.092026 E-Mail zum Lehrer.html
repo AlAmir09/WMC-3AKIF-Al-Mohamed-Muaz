@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lahmacun-Formular</title>
+</head>
+<body bgcolor="#131313" text="lightgray">
+
+    <h1>Umfrage zum Rezept: Lahmacun</h1>
+
+    <img src="Lahmbeajin.jpg" alt="Lahmbeajin mit Salat und Zitrone" width="400">
+
+    <br><br>
+
+    <form action="mailto:lorenzd@spengergasse.at?subject=Umfrage%20zum%20Lahmacun-Rezept"
+          method="post"
+          enctype="text/plain">
+          
+
+        <!-- Texteingabe -->
+        Vorname: 
+        <input type="text" name="vorname">
+        <br><br>
+        Nachname:
+        <input type="text" name="nachname">
+        
+        <br><br>
+
+        <!-- Weiteres Eingabefeld -->
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="E-Mail" required>
+        <br><br>
+
+        <!-- Radiobutton: nur eine Antwort -->
+        <p>Haben Sie Lahmacun schon einmal gegessen?</p>
+        <input type="radio" id="ja" name="Lahmacun gegessen" value="Ja" required>
+        <label for="ja">Ja</label>
+
+        <input type="radio" id="nein" name="Lahmacun gegessen" value="Nein">
+        <label for="nein">Nein</label>
+        <br><br>
+
+        <!-- Checkbox: mehrere Antworten -->
+        <p>Was essen Sie gerne dazu?</p>
+        <input type="checkbox" id="salat" name="Beilage" value="Salat">
+        <label for="salat">Salat</label>
+
+        <input type="checkbox" id="zitrone" name="Beilage" value="Zitrone">
+        <label for="zitrone">Zitrone</label>
+
+        <input type="checkbox" id="joghurt" name="Beilage" value="Joghurt">
+        <label for="joghurt">Joghurt</label>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="schaerfe">Gewünschte Schärfe:</label>
+        <select id="schaerfe" name="Schaerfe" required>
+            <option value="">Bitte auswählen</option>
+            <option value="mild">Mild</option>
+            <option value="mittel">Mittel</option>
+            <option value="scharf">Scharf</option>
+        </select>
+        <br><br>
+
+        <!-- Mehrfachauswahl -->
+        <label for="zutaten">Lieblingszutaten:</label><br>
+        <select id="zutaten" name="Lieblingszutaten" multiple size="4">
+            <option value="Tomaten">Tomaten</option>
+            <option value="Paprika">Paprika</option>
+            <option value="Zwiebeln">Zwiebeln</option>
+            <option value="Petersilie">Petersilie</option>
+            <option value="Granatapfel">Granatapfel</option>
+        </select>
+        
+        <br><br>
+
+        <!-- Mehrzeiliges Textfeld -->
+        <label for="kommentar">Kommentar zum Rezept:</label><br>
+        <textarea id="kommentar" name="Kommentar" rows="5" cols="40"
+                  placeholder="Schreiben Sie hier Ihren Kommentar."></textarea>
+        <br><br>
+
+        <input type="submit" value="Per E-Mail senden">
+        <input type="reset" value="Formular zurücksetzen">
+
+    </form>
+
+</body>
+</html>
