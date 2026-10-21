@@ -1,0 +1,82 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+} 
+
+#tierheim-title {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+
+nav {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    color: green;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+aside figure {
+    margin: 0 0 25px 0;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+aside figure:hover {
+    transform: scale(1.15);
+    z-index: 1;
+    color: purple;
+}
+
+aside figure:hover figcaption {
+    color: purple;
+}
+
+main {
+    padding: 20px;
+}
+
+section article p {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+}
+
+footer {
+    background-color: darkturquoise;
+    text-align: center;
+    margin-top: auto;
+    padding: 15px;
+}
