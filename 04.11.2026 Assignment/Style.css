@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+nav.site-nav,
+nav.footer-nav {
+  background-color: #16416b;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: .8rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: steelblue;
+  text-decoration: underline;
+}
+
+header.page-header {
+  background-color: steelblue;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+header.page-header h1 {
+  margin: .5rem 0;
+}
+
+header.page-header h1 a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: white;
+  text-decoration: none;
+}
+
+header.page-header img {
+  width: 120px;
+  height: auto;
+}
+
+article.lead {
+  background-color: steelblue;
+  color: white;
+  padding: 1rem;
+}
+
+article.lead h2 {
+  margin-top: 0;
+}
+
+article.lead figure {
+  margin: 1rem 0 0;
+}
+
+article.lead figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+main section {
+  margin: 2rem 0;
+}
+
+main section ul {
+  list-style: none;
+  padding: 0 2rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+aside figure {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 10px solid dodgerblue;
+  background: #eaf1f6;
+}
+
+aside figure img {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 1rem;
+}
+
+aside figure::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+aside blockquote {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer address {
+  border-top: 1px solid #999;
+  padding: 1rem 0;
+}
+
+form {
+  background: #f3f3f3;
+  padding: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: .75rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  max-width: 700px;
+  padding: .4rem;
+}
+
+form label.check {
+  display: flex;
+  gap: .5rem;
+  align-items: start;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: .6rem;
+  border-bottom: 1px solid #bbb;
+}
+
+th {
+  background: steelblue;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #eaf1f6;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0 auto;
+    padding: 0 .5rem;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    border-bottom: 1px solid #678;
+  }
+
+  main section ul {
+    padding: 0;
+  }
+
+  aside figure img {
+    float: none;
+    display: block;
+    margin-bottom: .5rem;
+  }
+}

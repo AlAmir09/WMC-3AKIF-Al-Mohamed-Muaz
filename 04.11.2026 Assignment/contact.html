@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – ORF Übung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Hauptnavigation">
+  <ul>
+    <li><a href="index.html">News</a></li>
+    <li><a href="top40.html">Ö3 Top 40</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <h1>
+    <a href="index.html">
+      <span>NEWS</span>
+      <img src="https://orf.at/mojo/1_4_1/storyserver//news/news/images/target_news.svg"
+           width="150" height="100" alt="ORF.at Logo">
+    </a>
+  </h1>
+  <address>
+    ORF-Zentrum<br>
+    Würzburggasse 30<br>
+    1136 Wien
+  </address>
+</header>
+
+<main>
+  <form>
+    <label for="name">Ihr Name:</label>
+    <input id="name" name="Name" type="text" required>
+
+    <label for="email">Ihre Email:</label>
+    <input id="email" name="Email" type="email" required>
+
+    <label for="nachricht">Ihre Nachricht:</label>
+    <textarea id="nachricht" name="Nachricht" rows="8" required></textarea>
+
+    <label class="check">
+      <input type="checkbox" required>
+      Ich stimme der Verarbeitung meiner Angaben zur Beantwortung
+      meiner Nachricht zu.
+    </label>
+
+    <button type="button">Abschicken</button>
+  </form>
+</main>
+
+<footer>
+  <address>
+    ORF-Zentrum<br>
+    Würzburggasse 30<br>
+    1136 Wien
+  </address>
+  <nav class="footer-nav" aria-label="Footernavigation">
+    <ul>
+      <li><a href="https://orf.at/stories/impressum/">Impressum</a></li>
+      <li><a href="https://orf.at/stories/datenschutz/">Datenschutz</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>
